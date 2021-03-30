@@ -16,35 +16,87 @@ function HomePage () {
       <div className='contentBlock'>
         <h3>About me:</h3>
         <p>
-          I am a 24 year old student based in Sydney, Australia looking to make a break into software engineering.
-          I have been a massive fan of computers since I was a little bub and have always pioneered to learn and create.
+          I am a 23 year old student based in Sydney, Australia looking to make
+          a break into software engineering. I have been a massive fan of
+          computers since I was a little bub and have always pioneered to learn
+          and create.
         </p>
-        <p> 
-          My interests vary from 2D/3D animation and character design to Cyber Security and Frontend Software design. 
-          I'm comfortable with Python and the linux environment, and am familiar with version control software such as Github.
+        <p>
+          My interests vary from 2D/3D animation and character design to Cyber
+          Security and Frontend Software design. I'm comfortable with Python and
+          the linux environment, and am familiar with version control software
+          such as Github.
         </p>
       </div>
       <div className='contentBlock' id='education'>
         <h3>Education:</h3>
         <h2>University of New South Wales:</h2>
-        <h3>Bachelor of Computer Science / Bachelor of Media Arts (Double Degree)</h3>
+        <h3>
+          Bachelor of Computer Science / Bachelor of Media Arts (Double Degree)
+        </h3>
         <h4>2017- 2021</h4>
         <p>
-        I started out my tertiary education studying a Bachelor of Media Arts, a degree which focussed on how digital media can be used to create art. Whilst this degree was rewarding, I felt that it was not technically focussed enough, and so in 2018, I switched to a double degree in Computer Science.
-From my Media Arts degree I have learnt a range of creative Skills such as:
+          I started out my tertiary education studying a Bachelor of Media Arts,
+          a degree which focussed on how digital media can be used to create
+          art. Whilst this degree was rewarding, I felt that it was not
+          technically focussed enough, and so in 2018, I switched to a double
+          degree in Computer Science. From my Media Arts degree I have learnt a
+          range of creative Skills such as:
         </p>
         <ul>
-        <li>	Graphic Design</li>
-        <li>3D modelling and animation</li>
-        <li>Interactive Design </li>
-        </ul>       
-        <p> 
-          My interests vary from 2D/3D animation and character design to Cyber Security and Frontend Software design. 
-          I'm comfortable with Python and the linux environment, and am familiar with version control software such as Github.
+          <li> Graphic Design</li>
+          <li>3D modelling and animation</li>
+          <li>Interactive Design </li>
+        </ul>
+        <p>
+          My interests vary from 2D/3D animation and character design to Cyber
+          Security and Frontend Software design. I'm comfortable with Python and
+          the linux environment, and am familiar with version control software
+          such as Github.
         </p>
       </div>
       <div className='contentBlock' id='projects'>
         <h3>Skills:</h3>
+        <div className='skillBox'>
+          <div className='skillName'>
+            <h1> JavaScript: </h1>
+          </div>
+          <div className='skillGraphic'>
+            <div className='skillGraphicFill_JS' />
+          </div>
+        </div>
+        <div className='skillBox'>
+          <div className='skillName'>
+            <h1> Java: </h1>
+          </div>
+          <div className='skillGraphic'>
+            <div className='skillGraphicFill_Java' />
+          </div>
+        </div>
+        <div className='skillBox'>
+          <div className='skillName'>
+            <h1> Python: </h1>
+          </div>
+          <div className='skillGraphic'>
+            <div className='skillGraphicFill_Python' />
+          </div>
+        </div>
+        <div className='skillBox'>
+          <div className='skillName'>
+            <h1> C: </h1>
+          </div>
+          <div className='skillGraphic'>
+            <div className='skillGraphicFill_C' />
+          </div>
+        </div>
+        <div className='skillBox'>
+          <div className='skillName'>
+            <h1> Unix: </h1>
+          </div>
+          <div className='skillGraphic'>
+            <div className='skillGraphicFill_Unix' />
+          </div>
+        </div>
       </div>
       <div className='contentBlock' id='projects'>
         <h3>Projects:</h3>
