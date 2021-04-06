@@ -59,43 +59,64 @@ function HomePage () {
         <h3>Skills:</h3>
         <div className='skillBox'>
           <div className='skillName'>
-            <h1> JavaScript: </h1>
+            
+            <div style={{ display:'flex', justifyContent:'space-between'}}>
+              <h4> JavaScript: </h4>
+              <h4>80%</h4>
+            </div>
           </div>
           <div className='skillGraphic'>
             <div className='skillGraphicFill_JS' />
           </div>
+          <p>I like this language because it is cool. I like this language because it is cool </p>
         </div>
         <div className='skillBox'>
           <div className='skillName'>
-            <h1> Java: </h1>
+            <div style={{ display:'flex', justifyContent:'space-between'}}>
+              <h4> Java: </h4>
+              <h4>80%</h4>
+            </div>
           </div>
           <div className='skillGraphic'>
             <div className='skillGraphicFill_Java' />
           </div>
+          <p>I like this language because it is cool. I like this language because it is cool </p>
         </div>
         <div className='skillBox'>
           <div className='skillName'>
-            <h1> Python: </h1>
+            <div style={{ display:'flex', justifyContent:'space-between'}}>
+              <h4> Python: </h4>
+              <h4>80%</h4>
+            </div>
           </div>
           <div className='skillGraphic'>
             <div className='skillGraphicFill_Python' />
           </div>
+          <p>I like this language because it is cool. I like this language because it is cool </p>
         </div>
         <div className='skillBox'>
           <div className='skillName'>
-            <h1> C: </h1>
+            <div style={{ display:'flex', justifyContent:'space-between'}}>
+              <h4> C: </h4>
+              <h4>80%</h4>
+            </div>
           </div>
           <div className='skillGraphic'>
             <div className='skillGraphicFill_C' />
           </div>
+          <p>I like this language because it is cool. I like this language because it is cool </p>
         </div>
         <div className='skillBox'>
           <div className='skillName'>
-            <h1> Unix: </h1>
+            <div style={{ display:'flex', justifyContent:'space-between'}}>
+              <h4> Unix: </h4>
+              <h4>80%</h4>
+            </div>
           </div>
           <div className='skillGraphic'>
             <div className='skillGraphicFill_Unix' />
           </div>
+          <p>I like this language because it is cool. I like this language because it is cool </p>
         </div>
       </div>
       <div className='contentBlock' id='projects'>
