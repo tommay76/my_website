@@ -1,13 +1,22 @@
-import React from "react";
-import "../css/AppBar.css";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import '../css/AppBar.css'
 
 function AppBar () {
   return (
-    <div className="appBar"> 
-        <button> <h2>About</h2> </button>
-        <button ><h2> Education </h2></button>
+    <div className='appBar'>
+      <Link to='/dashboard'>
+        <button>
+          <h2>About</h2>
+        </button>
+      </Link>
+      <Link to='/contact'>
+        <button>
+          <h2> Contact </h2>
+        </button>
+      </Link>
     </div>
   )
 }
 
-export default AppBar;
+export default AppBar

@@ -1,0 +1,22 @@
+.mainBody {
+    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(183, 236, 255);
+    justify-content: baseline;
+    padding: 2em;
+    color: white;
+    z-index: 0;
+}
+.contentBlock { 
+    margin: 2em;
+    background-color: white;
+    width: 75%;
+    padding: 2em;
+    border: .5em solid rgb(22, 22, 24);
+    border-radius: 2em;
+    color: rgb(22, 22, 24);
+    box-shadow: 3em 3em  rgb(22, 22, 24);
+    z-index: 2;
+}

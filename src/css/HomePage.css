@@ -2,18 +2,48 @@
 *{
     font-family: 'Courier New', Courier, monospace;
 }
+Link {
+    cursor: pointer;
+}
 .mainHeader {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2em;
-    
+    z-index: 2;
     color: rgb(22, 22, 24);
     background-color: white;
     box-shadow: 1em 1em  rgb(22, 22, 24);
-    border-radius: 15em 15em 5em 5em;
+    border-radius: 14em 15em 5em 5em;
     font-family: 'Courier New', Courier, monospace;
+}
+.PC {
+    transform: rotate(10deg);
+    fill: rgb(22, 22, 24);
+    stroke: none;
+}
+.Controller {
+    transform: rotate(-20deg);
+    fill: rgb(22, 22, 24);
+    stroke: none;
+}
+.Headphones {
+    transform: rotate(5deg);
+    fill: rgb(22, 22, 24);
+    stroke: none;
+}
+.iconsContainer {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10em;
+    z-index: 1;
+    right: 10%;
+    height: 5em;
+    width: 100%;
+    height: 100%;
 }
 .hrTitle {
     border: 2px solid rgb(22, 22, 24);
@@ -29,12 +59,18 @@
     background-repeat: no-repeat;
     width: 20em;
     min-height: 20em;
-    
+    transition: transform .2s;
     border: .5em solid rgb(22, 22, 24);
     text-align: center;
     vertical-align: bottom;
     border-radius: 50%;
+    
 }
+.displayPic:hover {
+    transform: scale(1.1);
+    
+}
+
 .mainBody {
     align-items: center;
     min-height: 100em;
@@ -44,6 +80,7 @@
     justify-content: baseline;
     padding: 2em;
     color: white;
+    z-index: 0;
 }
 .contentBlock { 
     margin: 2em;
@@ -54,6 +91,7 @@
     border-radius: 2em;
     color: rgb(22, 22, 24);
     box-shadow: 3em 3em  rgb(22, 22, 24);
+    z-index: 2;
 }
 .skillBox {
     display: flex;
@@ -115,4 +153,52 @@
     width: 80%;
     height: 100%;
     border-radius: 0.6em 0em 0em .6em;
+}
+/* Projects */
+.projectsBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projectContainer {
+    border: .5em solid rgb(22, 22, 24);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 14em;
+    height: 1em;
+    transition: .2s all ease-out;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, transparent 0%, transparent 70%, rgb(36, 49, 65));
+    background-size: 400% 400%;
+    color:transparent;
+    padding: 7em 0;
+    z-index: 0;
+}
+.projectContainer:hover {
+    transform: scale(1.1);
+    background-position: 100% 100%;
+    color:white;
+    box-shadow: 0px 0px 20px rgb(0, 204, 255) ;
+}
+.projectContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    z-index: -1;
+}
+.projectContainer h2{
+    z-index: -2;
+}
+.myButton {
+    
+    border: none;
+    border-radius: 50%;
 }

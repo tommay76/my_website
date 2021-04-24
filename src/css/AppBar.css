@@ -7,6 +7,7 @@
     border-bottom: .5em  solid rgb(22, 22, 24);
     box-shadow: 2em 2em grey;
     color: rgb(22, 22, 24);
+    z-index: 3;
 }
 button {
     background-color: white;
