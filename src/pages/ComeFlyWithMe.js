@@ -1,5 +1,4 @@
 import { useEffect, React } from 'react'
-import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import cutepic from '../images/cute.jpg'
 import constellations from '../images/projects/constellation.png'

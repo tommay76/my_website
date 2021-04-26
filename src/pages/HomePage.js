@@ -255,7 +255,7 @@ function HomePage () {
               </div>
             </button>
           </Link>
-          <Link to='/nameadder'>
+          <Link to='/reee'>
             <button className='myButton'>
               <div className='projectContainer'>
                 <img src={shallR} alt='andyoushallreceive' />

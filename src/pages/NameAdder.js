@@ -19,7 +19,7 @@ function NameAdder () {
 
   useEffect(() => {
     console.log('name added.', newName)
-  }, [names])
+  }, [names, newName])
 
   return (
     <div>
