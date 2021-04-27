@@ -35,7 +35,7 @@ function HomePage () {
   }, [])
   return (
     <div className='mainBody'>
-      <div className='iconsContainer'>
+      {/* <div className='iconsContainer'>
         <div className='PC'>
           {' '}
           <Pc />
@@ -48,7 +48,7 @@ function HomePage () {
           {' '}
           <Controller />
         </div>
-      </div>
+      </div> */}
       <div className='mainHeader'>
         <div className='displayPic' />
         <h1>Thomas Doyle</h1>

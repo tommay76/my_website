@@ -8,6 +8,7 @@ import {
 import './css/App.css'
 import HomePage from './pages/HomePage'
 import Constellations from './pages/Constellations'
+import FilmFinder from './pages/FilmFinder'
 import ContactPage from './pages/ContactPage'
 import NotFound from './pages/NotFound'
 import NameAdder from './pages/NameAdder'
@@ -21,11 +22,11 @@ function App () {
         <AppBar />
         <Switch>
           <Route path='/dashboard' exact component={HomePage} />
+          <Route path='/comeFlyWithMe' exact component={ComeFlyWithMe} />
+          <Route path='/constellations' exact component={Constellations} />
           <Route path='/contact' exact component={ContactPage} />
           <Route path='/nameadder' exact component={NameAdder} />
-          <Route path='/constellations' exact component={Constellations} />
-          <Route path='/comeFlyWithMe' exact component={ComeFlyWithMe} />
-          <Route path='/filmFinder' exact component={Constellations} />
+          <Route path='/filmFinder' exact component={FilmFinder} />
           <Route path='/' exact component={HomePage} />
           <Route component={NotFound} />
         </Switch>

@@ -7,7 +7,7 @@ function AppBar () {
     <div className='appBar'>
       <Link to='/dashboard'>
         <button>
-          <h2>About</h2>
+          <h2>Home</h2>
         </button>
       </Link>
       <Link to='/contact'>

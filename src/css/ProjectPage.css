@@ -38,6 +38,16 @@ button {
     padding: 2em;
     color: rgb(255, 255, 255);
 }
+.filmFinderBody {
+    align-items: center;
+    min-height: 100em;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(40,44,51);
+    justify-content: baseline;
+    padding: 2em;
+    color: rgb(255, 255, 255);
+}
 .comeFlyWithMeBody {
     align-items: center;
     min-height: 100em;
@@ -61,8 +71,16 @@ button {
     width: 90vw;
     height: 20vw;
     max-width: 50em;
-    max-height: 40em;
-    background-size: contain;
+    min-height: 25em;
+    background-size: cover;
+    background-position: center;
+}
+.filmFinderBanner {
+    background-image: url('../images/projects/filmFinderPage/homepage.png');
+    width: 80vw;
+    height: 40vw;
+    background-position: center;
+    background-size: cover;
 }
 .contentBlock { 
     margin: 2em;

@@ -36,16 +36,22 @@ Link {
     transform: rotate(10deg);
     fill: rgb(22, 22, 24);
     stroke: none;
+    width: 20%;
+    height: 100%;
 }
 .Controller {
     transform: rotate(-20deg);
     fill: rgb(22, 22, 24);
     stroke: none;
+    width: 20%;
+    height: 100%;
 }
 .Headphones {
     transform: rotate(5deg);
     fill: rgb(22, 22, 24);
     stroke: none;
+    width: 20%;
+    height: 100%;
 }
 .iconsContainer {
     display: flex;
@@ -55,9 +61,8 @@ Link {
     top: 10em;
     z-index: 1;
     right: 10%;
-    height: 5em;
+    height: 10vw;
     width: 100%;
-    height: 100%;
 }
 .hrTitle {
     border: 2px solid rgb(22, 22, 24);
@@ -109,7 +114,7 @@ Link {
         flex-direction: column;
     }
     body {
-        font-size: 50%;
+        font-size: 80%;
     }
 }
 .skillName {
@@ -180,6 +185,7 @@ Link {
     color:transparent;
     padding: 7em 0;
     z-index: 0;
+    overflow: hidden;
 }
 .projectContainer:hover {
     transform: scale(1.1);
@@ -202,7 +208,7 @@ Link {
     z-index: -2;
 }
 .myButton {
-    
+    max-width: 28%;
     border: none;
     border-radius: 50%;
 }
