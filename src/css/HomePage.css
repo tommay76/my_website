@@ -5,6 +5,20 @@
 Link {
     cursor: pointer;
 }
+
+.mainBody {
+    align-items: center;
+    min-height: 100em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #b7ecff;
+    justify-content: baseline;
+    padding: 2em;
+    color: white;
+    z-index: 0;
+}
+
 .mainHeader {
     align-items: center;
     display: flex;
@@ -71,17 +85,7 @@ Link {
     
 }
 
-.mainBody {
-    align-items: center;
-    min-height: 100em;
-    display: flex;
-    flex-direction: column;
-    background-color: #b7ecff;
-    justify-content: baseline;
-    padding: 2em;
-    color: white;
-    z-index: 0;
-}
+
 .contentBlock { 
     margin: 2em;
     background-color: white;
