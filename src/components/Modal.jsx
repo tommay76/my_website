@@ -11,6 +11,6 @@ function Modal ({ selectedImage, setSelectedImage }) {
     <div className='overlay' onClick={handleClick}>
       <img src={selectedImage} alt='selectedImage' />
     </div>
-  );
+  )
 }
 export default Modal

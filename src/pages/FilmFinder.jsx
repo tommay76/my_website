@@ -1,16 +1,16 @@
-import { React, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { React, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 // images
-import homepage from '../images/projects/filmFinderPage/homepage.png';
-import moviepage from '../images/projects/filmFinderPage/moviepage.png';
-import profilepage from '../images/projects/filmFinderPage/profilepage.png';
-import searchpage from '../images/projects/filmFinderPage/search.png';
-import settingspage from '../images/projects/filmFinderPage/settingspage.png';
-import lightmodehome from '../images/projects/filmFinderPage/lightmodehome.png';
-import lightmodesearch from '../images/projects/filmFinderPage/lightmodesearch.png';
+import homepage from '../images/projects/filmFinderPage/homepage.png'
+import moviepage from '../images/projects/filmFinderPage/moviepage.png'
+import profilepage from '../images/projects/filmFinderPage/profilepage.png'
+import searchpage from '../images/projects/filmFinderPage/search.png'
+import settingspage from '../images/projects/filmFinderPage/settingspage.png'
+import lightmodehome from '../images/projects/filmFinderPage/lightmodehome.png'
+import lightmodesearch from '../images/projects/filmFinderPage/lightmodesearch.png'
 
-import ImageGrid from '../components/ImageGrid';
-import Modal from '../components/Modal';
+import ImageGrid from '../components/ImageGrid'
+import Modal from '../components/Modal'
 
 function FilmFinder () {
   useEffect(() => {

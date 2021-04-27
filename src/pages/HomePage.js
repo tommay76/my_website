@@ -15,9 +15,9 @@ import Accordion from '@material-ui/core/Accordion'
 import AccordionSummary from '@material-ui/core/AccordionSummary'
 import AccordionDetails from '@material-ui/core/AccordionDetails'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
-import Headphones from '../images/reactComponents/Headphones'
-import Controller from '../images/reactComponents/Controller'
-import Pc from '../images/reactComponents/Pc'
+// import Headphones from '../images/reactComponents/Headphones'
+// import Controller from '../images/reactComponents/Controller'
+// import Pc from '../images/reactComponents/Pc'
 
 // Components
 import ProjectButton from '../components/ProjectButton'
