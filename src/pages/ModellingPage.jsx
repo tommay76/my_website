@@ -20,7 +20,7 @@ function ModellingPage () {
     <div>
       <div className='filmFinderBody'>
         <h1>Some Renders I've made :)</h1>
-        <div className='filmFinderBanner' />
+        <div className='modellingBanner' />
         <div className='contentBlock'>
           <h3>Programs Used: Maya | Photoshop (for touch-ups)</h3>
           <p>

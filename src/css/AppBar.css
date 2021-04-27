@@ -4,10 +4,11 @@
     flex-direction: row;
     background-color: white;
     justify-content: flex-end;
+    border: 0;
     border-bottom: .5em  solid rgb(22, 22, 24);
-    box-shadow: 2em 2em grey;
     color: rgb(22, 22, 24);
     z-index: 3;
+    max-width: 100%;
 }
 button {
     background-color: transparent;
