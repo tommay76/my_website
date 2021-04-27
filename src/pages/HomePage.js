@@ -10,7 +10,7 @@ import constellations from '../images/projects/constellation.png'
 import comeFlyWithMe from '../images/projects/comeflywithme.png'
 import shallR from '../images/shallR.png'
 import FilmFinderImage from '../images/projects/filmfinderhome.png'
-
+import Room from '../images/room.png'
 import Accordion from '@material-ui/core/Accordion'
 import AccordionSummary from '@material-ui/core/AccordionSummary'
 import AccordionDetails from '@material-ui/core/AccordionDetails'
@@ -28,6 +28,11 @@ function HomePage () {
       title: 'Film Finder',
       image: FilmFinderImage,
       link: '/filmFinder'
+    },
+    {
+      title: 'Some 3D modelling',
+      image: Room,
+      link: '/modelling'
     }
   ]
   useEffect(() => {

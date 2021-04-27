@@ -10,6 +10,7 @@ import HomePage from './pages/HomePage'
 import Constellations from './pages/Constellations'
 import FilmFinder from './pages/FilmFinder'
 import ContactPage from './pages/ContactPage'
+import ModellingPage from './pages/ModellingPage'
 import NotFound from './pages/NotFound'
 import NameAdder from './pages/NameAdder'
 import ComeFlyWithMe from './pages/ComeFlyWithMe'
@@ -25,6 +26,7 @@ function App () {
           <Route path='/comeFlyWithMe' exact component={ComeFlyWithMe} />
           <Route path='/constellations' exact component={Constellations} />
           <Route path='/contact' exact component={ContactPage} />
+          <Route path='/modelling' exact component={ModellingPage} />
           <Route path='/nameadder' exact component={NameAdder} />
           <Route path='/filmFinder' exact component={FilmFinder} />
           <Route path='/' exact component={HomePage} />
