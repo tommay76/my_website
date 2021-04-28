@@ -5,15 +5,11 @@ import '../css/AppBar.css'
 function AppBar () {
   return (
     <div className='appBar'>
-      <Link to='/dashboard'>
-        <button>
-          <h2>Home</h2>
-        </button>
+      <Link to='/dashboard' className='buttonA' style={{ color: 'black' }}>
+        <h2>Home</h2>
       </Link>
-      <Link to='/contact'>
-        <button>
-          <h2> Contact </h2>
-        </button>
+      <Link to='/contact' className='buttonA' style={{ color: 'black' }}>
+        <h2> Contact </h2>
       </Link>
     </div>
   )

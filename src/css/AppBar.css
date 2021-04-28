@@ -10,7 +10,7 @@
     z-index: 3;
     max-width: 100%;
 }
-button {
+a {
     background-color: transparent;
     height: 100%;
     width:10em;
