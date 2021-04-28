@@ -8,7 +8,9 @@ import {
 import './css/App.css'
 import HomePage from './pages/HomePage'
 import Constellations from './pages/Constellations'
+import FallingButInRisingPage from './pages/FallingButInRisingPage'
 import FilmFinder from './pages/FilmFinder'
+import SickDayPage from './pages/SickDayPage'
 import ContactPage from './pages/ContactPage'
 import ModellingPage from './pages/ModellingPage'
 import NotFound from './pages/NotFound'
@@ -26,9 +28,11 @@ function App () {
           <Route path='/comeFlyWithMe' exact component={ComeFlyWithMe} />
           <Route path='/constellations' exact component={Constellations} />
           <Route path='/contact' exact component={ContactPage} />
+          <Route path='/fallingButInRising' exact component={FallingButInRisingPage} />
+          <Route path='/filmFinder' exact component={FilmFinder} />
           <Route path='/modelling' exact component={ModellingPage} />
           <Route path='/nameadder' exact component={NameAdder} />
-          <Route path='/filmFinder' exact component={FilmFinder} />
+          <Route path='/sickDay' exact component={SickDayPage} />
           <Route path='/' exact component={HomePage} />
           <Route component={NotFound} />
         </Switch>

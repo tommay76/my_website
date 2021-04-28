@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom'
 
 // Images
 import constellations from '../images/projects/constellation.png'
+import falling from '../images/falling.png'
+import sickday from '../images/sickday.png'
 import comeFlyWithMe from '../images/projects/comeflywithme.png'
 import shallR from '../images/shallR.png'
 import FilmFinderImage from '../images/projects/filmfinderhome.png'
@@ -33,6 +35,31 @@ function HomePage () {
       title: 'Some 3D modelling',
       image: Room,
       link: '/modelling'
+    },
+    {
+      title: 'Falling but in Rising',
+      image: falling,
+      link: '/fallingButInRising'
+    },
+    {
+      title: 'Sick Day',
+      image: sickday,
+      link: '/sickDay'
+    },
+    {
+      title: 'Constellations',
+      image: constellations,
+      link: '/constellations'
+    },
+    {
+      title: 'Come Fly With Me',
+      image: comeFlyWithMe,
+      link: '/comeFlyWithMe'
+    },
+    {
+      title: 'And You Shall Receive',
+      image: shallR,
+      link: '/comeFlyWithMe'
     }
   ]
   useEffect(() => {
@@ -244,30 +271,7 @@ function HomePage () {
       <div className='contentBlock' id='projects'>
         <h3>Projects:</h3>
         <div className='projectsBlock'>
-          <Link to='/constellations'>
-            <button className='myButton'>
-              <div className='projectContainer'>
-                <img src={constellations} alt='constellations' />
-                <h2>Constellations</h2>
-              </div>
-            </button>
-          </Link>
-          <Link to='/comeFlyWithMe'>
-            <button className='myButton'>
-              <div className='projectContainer'>
-                <img src={comeFlyWithMe} alt='comeFlyWithMe' />
-                <h2>Come Fly With Me</h2>
-              </div>
-            </button>
-          </Link>
-          <Link to='/reee'>
-            <button className='myButton'>
-              <div className='projectContainer'>
-                <img src={shallR} alt='andyoushallreceive' />
-                <h2>And you shall recieve</h2>
-              </div>
-            </button>
-          </Link>
+          
           {projects.length !== 0 && (
             projects.map((project) => (
               <ProjectButton

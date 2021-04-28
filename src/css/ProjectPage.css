@@ -58,6 +58,26 @@ button {
     padding: 2em;
     color: rgb(255, 255, 255);
 }
+.fallingBody {
+    align-items: center;
+    min-height: 100em;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(6,11,23);
+    justify-content: baseline;
+    padding: 2em;
+    color: rgb(255, 255, 255);
+}
+.sickDayBody {
+    align-items: center;
+    min-height: 100em;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(183, 213, 123);
+    justify-content: baseline;
+    padding: 2em;
+    color: rgb(255, 255, 255);
+}
 .constellationsBanner {
     background-image: url('../images/projects/constellation.png');
     width: 40vw;
@@ -89,6 +109,14 @@ button {
     background-position: center;
     background-size: cover;
 }
+
+.videoPlayer {
+    width: 80vw;
+    height: 30vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 .contentBlock { 
     margin: 2em;
     background-color: white;
@@ -99,3 +127,4 @@ button {
     color: rgb(22, 22, 24);
     box-shadow: 3em 3em  rgb(22, 22, 24);
 }
+

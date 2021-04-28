@@ -22,7 +22,7 @@
 .gridItem img {
     min-width: 100%;
     min-height: 100%;
-    max-width: 150%;
+    max-width: 100%;
     position: absolute;
     left: 0;
     top: 0;
