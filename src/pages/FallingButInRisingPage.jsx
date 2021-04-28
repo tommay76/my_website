@@ -11,9 +11,9 @@ import sc6 from '../images/projects/fallingbutinrising/sc6.png'
 import sc7 from '../images/projects/fallingbutinrising/sc7.png'
 import sc8 from '../images/projects/fallingbutinrising/sc8.png'
 
-//video 
+// video
 import VideoPlayer from 'react-video-js-player'
-import falling from '../videos/27698417.mp4'
+import falling from '../videos/lowres.mp4'
 
 import ImageGrid from '../components/ImageGrid'
 import Modal from '../components/Modal'

@@ -1,6 +1,5 @@
 import { React, useEffect } from 'react'
 import '../css/HomePage.css'
-import { Link } from 'react-router-dom'
 // import Child from './components/element'
 // import Button from '@material-ui/core/Button'
 // import TextField from '@material-ui/core/TextField'
@@ -271,7 +270,6 @@ function HomePage () {
       <div className='contentBlock' id='projects'>
         <h3>Projects:</h3>
         <div className='projectsBlock'>
-          
           {projects.length !== 0 && (
             projects.map((project) => (
               <ProjectButton
