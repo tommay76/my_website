@@ -17,6 +17,7 @@ function ImageGrid ({ setSelectedImage, images }) {
               <img
                 src={image}
                 alt={'image' + index}
+
               />
             </div>
           )

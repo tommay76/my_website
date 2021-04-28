@@ -8,10 +8,9 @@ import green from '../images/projects/sickDay/green.gif'
 import mitosis from '../images/projects/sickDay/mitosis.gif'
 import porple from '../images/projects/sickDay/porple.gif'
 
-
-//video 
-import VideoPlayer from 'react-video-js-player'
-import SickDay from '../videos/sickDay.mp4'
+// video
+// import VideoPlayer from 'react-video-js-player'
+// import SickDay from '../videos/sickDay.mp4'
 
 import ImageGrid from '../components/ImageGrid'
 import Modal from '../components/Modal'
@@ -27,19 +26,20 @@ function SickDayPage () {
     <div>
       <div className='sickDayBody'>
         <h1>Sick Day</h1>
-        <div className='videoPlayer'>
+        {/* <div className='videoPlayer'>
           <VideoPlayer
             src={SickDay}
             poster={pics}
             width='720'
             height='405'
           />
-        </div>
+        </div> */}
         <div className='contentBlock'>
           <h3>Programs Used:Maya | litlle bit of After Effects</h3>
           <p>
             Part of a 4 person group project, I made the models for bacteria and blood cells and rendered them for a short film.
           </p>
+          <a href='https://youtu.be/rB7gYFPUro8'> Here's the video!</a>
           <Link to='/dashboard'>
             <button>Back to home page</button>
           </Link>

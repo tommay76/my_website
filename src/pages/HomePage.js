@@ -54,11 +54,6 @@ function HomePage () {
       title: 'Come Fly With Me',
       image: comeFlyWithMe,
       link: '/comeFlyWithMe'
-    },
-    {
-      title: 'And You Shall Receive',
-      image: shallR,
-      link: '/comeFlyWithMe'
     }
   ]
   useEffect(() => {
@@ -66,20 +61,7 @@ function HomePage () {
   }, [])
   return (
     <div className='mainBody'>
-      {/* <div className='iconsContainer'>
-        <div className='PC'>
-          {' '}
-          <Pc />
-        </div>
-        <div className='Headphones'>
-          {' '}
-          <Headphones />
-        </div>
-        <div className='Controller'>
-          {' '}
-          <Controller />
-        </div>
-      </div> */}
+
       <div className='mainHeader'>
         <div className='displayPic' />
         <h1>Thomas Doyle</h1>

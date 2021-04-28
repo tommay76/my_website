@@ -11,16 +11,49 @@ import skyshot from '../images/projects/comeflywithme/skyshot.png'
 import mapcontroller from '../images/projects/comeflywithme/mapcontroller.png'
 import constellations from '../images/projects/constellation.png'
 import comeFlyWithMe from '../images/projects/comeflywithme.png'
+import falling from '../images/falling.png'
+import sickday from '../images/sickday.png'
+// import shallR from '../images/shallR.png'
+import FilmFinderImage from '../images/projects/filmfinderhome.png'
+import Room from '../images/room.png'
 
 import ImageGrid from '../components/ImageGrid'
 import Modal from '../components/Modal'
 
+import ProjectButton from '../components/ProjectButton'
 function ComeFlyWithMe () {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
   const [selectedImage, setSelectedImage] = useState(null)
   const images = [landcolor, morecode, someCode, skyshot, mapcontroller]
+  const projects = [
+    {
+      title: 'Film Finder',
+      image: FilmFinderImage,
+      link: '/filmFinder'
+    },
+    {
+      title: 'Some 3D modelling',
+      image: Room,
+      link: '/modelling'
+    },
+    {
+      title: 'Falling but in Rising',
+      image: falling,
+      link: '/fallingButInRising'
+    },
+    {
+      title: 'Sick Day',
+      image: sickday,
+      link: '/sickDay'
+    },
+    {
+      title: 'Constellations',
+      image: constellations,
+      link: '/constellations'
+    }
+  ]
   return (
     <div>
       <div className='comeFlyWithMeBody'>
@@ -91,6 +124,21 @@ function ComeFlyWithMe () {
           setSelectedImage={setSelectedImage}
         />
       )}
+      <div className='contentBlock'>
+        <h3>Other Projects</h3>
+        <div className='projectsBlock'>
+          {projects.length !== 0 && (
+            projects.map((project) => (
+              <ProjectButton
+                title={project.title}
+                link={project.link}
+                image={project.image}
+                key={project.title + 'button'}
+              />
+            ))
+          )}
+        </div>
+      </div>
     </div>
   )
 }
