@@ -1,6 +1,5 @@
 import { useEffect, useState, React } from 'react'
 import 'react-multi-carousel/lib/styles.css'
-import cutepic from '../images/cute.jpg'
 import '../css/ProjectPage.css'
 import { Link } from 'react-router-dom'
 
@@ -10,7 +9,6 @@ import someCode from '../images/projects/comeflywithme/someCode.png'
 import skyshot from '../images/projects/comeflywithme/skyshot.png'
 import mapcontroller from '../images/projects/comeflywithme/mapcontroller.png'
 import constellations from '../images/projects/constellation.png'
-import comeFlyWithMe from '../images/projects/comeflywithme.png'
 import falling from '../images/falling.png'
 import sickday from '../images/sickday.png'
 // import shallR from '../images/shallR.png'
@@ -91,30 +89,16 @@ function ComeFlyWithMe () {
         <div className='contentBlock'>
           <h3>Other Projects</h3>
           <div className='projectsBlock'>
-            <Link to='/constellations'>
-              <button className='myButton'>
-                <div className='projectContainer'>
-                  <img src={constellations} alt='constellations' />
-                  <h2>Constellations</h2>
-                </div>
-              </button>
-            </Link>
-            <Link to='/comeFlyWithMe'>
-              <button className='myButton'>
-                <div className='projectContainer'>
-                  <img src={comeFlyWithMe} alt='comeFlyWithMe' />
-                  <h2>Come Fly With Me</h2>
-                </div>
-              </button>
-            </Link>
-            <Link to='/nameadder'>
-              <button className='myButton'>
-                <div className='projectContainer'>
-                  <img src={cutepic} alt='andyoushallreceive' />
-                  <h2>And you shall recieve</h2>
-                </div>
-              </button>
-            </Link>
+            {projects.length !== 0 && (
+              projects.map((project) => (
+                <ProjectButton
+                  title={project.title}
+                  link={project.link}
+                  image={project.image}
+                  key={project.title + 'button'}
+                />
+              ))
+            )}
           </div>
         </div>
       </div>
@@ -124,21 +108,6 @@ function ComeFlyWithMe () {
           setSelectedImage={setSelectedImage}
         />
       )}
-      <div className='contentBlock'>
-        <h3>Other Projects</h3>
-        <div className='projectsBlock'>
-          {projects.length !== 0 && (
-            projects.map((project) => (
-              <ProjectButton
-                title={project.title}
-                link={project.link}
-                image={project.image}
-                key={project.title + 'button'}
-              />
-            ))
-          )}
-        </div>
-      </div>
     </div>
   )
 }

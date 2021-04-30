@@ -1,15 +1,48 @@
 import { useEffect, React } from 'react'
 import 'react-multi-carousel/lib/styles.css'
-import cutepic from '../images/cute.jpg'
-import constellations from '../images/projects/constellation.png'
 import comeFlyWithMe from '../images/projects/comeflywithme.png'
 import '../css/ProjectPage.css'
 import { Link } from 'react-router-dom'
+
+import ProjectButton from '../components/ProjectButton'
+// Images
+import falling from '../images/falling.png'
+import sickday from '../images/sickday.png'
+import Room from '../images/room.png'
+import FilmFinderImage from '../images/projects/filmfinderhome.png'
+
 // import Child from './components/element'
 // import Button from '@material-ui/core/Button'
 // import TextField from '@material-ui/core/TextField'
 
 function Constellations () {
+  const projects = [
+    {
+      title: 'Film Finder',
+      image: FilmFinderImage,
+      link: '/filmFinder'
+    },
+    {
+      title: 'Some 3D modelling',
+      image: Room,
+      link: '/modelling'
+    },
+    {
+      title: 'Falling but in Rising',
+      image: falling,
+      link: '/fallingButInRising'
+    },
+    {
+      title: 'Sick Day',
+      image: sickday,
+      link: '/sickDay'
+    },
+    {
+      title: 'Come Fly With Me',
+      image: comeFlyWithMe,
+      link: '/comeFlyWithMe'
+    }
+  ]
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -37,30 +70,16 @@ function Constellations () {
       <div className='contentBlock'>
         <h3>Other Projects</h3>
         <div className='projectsBlock'>
-          <Link to='/constellations'>
-            <button className='myButton'>
-              <div className='projectContainer'>
-                <img src={constellations} alt='constellations' />
-                <h2>Constellations</h2>
-              </div>
-            </button>
-          </Link>
-          <Link to='/comeFlyWithMe'>
-            <button className='myButton'>
-              <div className='projectContainer'>
-                <img src={comeFlyWithMe} alt='comeFlyWithMe' />
-                <h2>Come Fly With Me</h2>
-              </div>
-            </button>
-          </Link>
-          <Link to='/nameadder'>
-            <button className='myButton'>
-              <div className='projectContainer'>
-                <img src={cutepic} alt='andyoushallreceive' />
-                <h2>And you shall recieve</h2>
-              </div>
-            </button>
-          </Link>
+          {projects.length !== 0 && (
+            projects.map((project) => (
+              <ProjectButton
+                title={project.title}
+                link={project.link}
+                image={project.image}
+                key={project.title + 'button'}
+              />
+            ))
+          )}
         </div>
       </div>
     </div>

@@ -4,14 +4,15 @@ import '../css/HomePage.css'
 // import Button from '@material-ui/core/Button'
 // import TextField from '@material-ui/core/TextField'
 
+import ProjectButton from '../components/ProjectButton'
 // Images
 import constellations from '../images/projects/constellation.png'
 import falling from '../images/falling.png'
 import sickday from '../images/sickday.png'
 import comeFlyWithMe from '../images/projects/comeflywithme.png'
-import shallR from '../images/shallR.png'
-import FilmFinderImage from '../images/projects/filmfinderhome.png'
 import Room from '../images/room.png'
+import FilmFinderImage from '../images/projects/filmfinderhome.png'
+// import shallR from '../images/shallR.png'
 import Accordion from '@material-ui/core/Accordion'
 import AccordionSummary from '@material-ui/core/AccordionSummary'
 import AccordionDetails from '@material-ui/core/AccordionDetails'
@@ -21,7 +22,6 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 // import Pc from '../images/reactComponents/Pc'
 
 // Components
-import ProjectButton from '../components/ProjectButton'
 
 function HomePage () {
   const projects = [
@@ -71,16 +71,10 @@ function HomePage () {
       <div className='contentBlock'>
         <h3>About me:</h3>
         <p>
-          I am a 23 year old student based in Sydney, Australia looking to make
-          a break into software engineering. I have been a massive fan of
-          computers since I was a little bub and have always pioneered to learn
-          and create.
+        I would like to think myself as a digital creative, whether that be coding up website designs, using 3d modelling software to create interesting characters and environments,  or 2D software such as Photoshop or Illustrator, where I can communicate visually through effective graphics and visuals.
         </p>
         <p>
-          My interests vary from 2D/3D animation and character design to Cyber
-          Security and Frontend Software design. I'm comfortable with Python and
-          the linux environment, and am familiar with version control software
-          such as Github.
+          I make a mean cocktail, I'm a horrible chess player and I'm great at shooting things online.
         </p>
       </div>
       <div className='contentBlock' id='education'>

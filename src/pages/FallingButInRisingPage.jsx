@@ -1,5 +1,4 @@
 import { React, useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 // images
 import render from '../images/fallingPosterShot.png'
 import sc1 from '../images/projects/fallingbutinrising/sc1.png'
@@ -53,7 +52,6 @@ function FallingButInRisingPage () {
       link: '/comeFlyWithMe'
     }
   ]
-  
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -80,32 +78,33 @@ function FallingButInRisingPage () {
           <p>
             This work was my highschool Visual Arts major work, which I made in 2016. It went on to win a V-Fest short Film Award for student animations and also featured in the Mosman art prize.
           </p>
-          <a href='https://youtu.be/rhSSWxarnkM' > Here's the video!</a>
-
+          <div style={{width:'100%', textAlign:'center'}}>
+            <a href='https://youtu.be/rhSSWxarnkM'> Here's the video!</a>
+          </div>
         </div>
         <div className='contentBlock'>
           <h3>Library</h3>
           <ImageGrid setSelectedImage={setSelectedImage} images={images} />
         </div>
+        <div className='contentBlock'>
+          <h3>Other Projects</h3>
+          <div className='projectsBlock'>
+            {projects.length !== 0 && (
+              projects.map((project) => (
+                <ProjectButton
+                  title={project.title}
+                  link={project.link}
+                  image={project.image}
+                  key={project.title + 'button'}
+                />
+              ))
+            )}
+          </div>
+        </div>
       </div>
       {selectedImage && (
         <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage} />
       )}
-      <div className='contentBlock'>
-        <h3>Other Projects</h3>
-        <div className='projectsBlock'>
-          {projects.length !== 0 && (
-            projects.map((project) => (
-              <ProjectButton
-                title={project.title}
-                link={project.link}
-                image={project.image}
-                key={project.title + 'button'}
-              />
-            ))
-          )}
-        </div>
-      </div>
     </div>
   )
 }
