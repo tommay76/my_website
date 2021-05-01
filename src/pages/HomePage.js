@@ -68,7 +68,7 @@ function HomePage () {
         <hr className='hrTitle' />
         <h3>Designer | Developer</h3>
       </div>
-      <div className='contentBlock'>
+      <div className='contentBlockHome'>
         <h3>About me:</h3>
         <p>
         I would like to think myself as a digital creative, whether that be coding up website designs, using 3d modelling software to create interesting characters and environments,  or 2D software such as Photoshop or Illustrator, where I can communicate visually through effective graphics and visuals.
@@ -77,7 +77,7 @@ function HomePage () {
           I make a mean cocktail, I'm a horrible chess player and I'm great at shooting things online.
         </p>
       </div>
-      <div className='contentBlock' id='education'>
+      <div className='contentBlockHome' id='education'>
         <h3>Education:</h3>
         <h2>University of New South Wales:</h2>
         <h3>
@@ -141,7 +141,7 @@ function HomePage () {
           </AccordionDetails>
         </Accordion>
       </div>
-      <div className='contentBlock' id='projects'>
+      <div className='contentBlockHome' id='projects'>
         <h3>Skills:</h3>
         <div className='skillBox'>
           <div className='skillName'>
@@ -243,7 +243,7 @@ function HomePage () {
           </p>
         </div>
       </div>
-      <div className='contentBlock' id='projects'>
+      <div className='contentBlockHome' id='projects'>
         <h3>Projects:</h3>
         <div className='projectsBlock'>
           {projects.length !== 0 && (
