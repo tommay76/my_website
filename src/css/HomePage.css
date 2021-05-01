@@ -95,7 +95,7 @@ Link {
     margin: 2em;
     background-color: white;
     width: 75%;
-    padding: 2em 4em 2em 2em;
+    padding: 2em;
     border: .5em solid rgb(22, 22, 24);
     border-radius: 2em;
     color: rgb(22, 22, 24);
@@ -212,7 +212,7 @@ Link {
 }
 .buttonA {
     text-decoration: none;
-    margin: 1em 3em;
+    margin: 1em 1em;
     min-width: 14em;
 }
 
