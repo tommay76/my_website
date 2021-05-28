@@ -6,32 +6,20 @@ Link {
     cursor: pointer;
 }
 
-.mainBody {
+.HmainBody {
     align-items: center;
     min-height: 100em;
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #b7ecff;
     justify-content: baseline;
-    padding: 2em;
+    padding: 2em 0;
     color: white;
     z-index: 0;
 }
 
-.mainHeader {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2em;
-    z-index: 2;
-    color: rgb(22, 22, 24);
-    background-color: white;
-    box-shadow: 1em 1em  rgb(22, 22, 24);
-    border-radius: 14em 15em 5em 5em;
-    font-family: 'Courier New', Courier, monospace;
-}
+
 .PC {
     transform: rotate(10deg);
     fill: rgb(22, 22, 24);
@@ -70,19 +58,53 @@ Link {
     background-color:rgb(22, 22, 24);
     width: 80%;
 }
+
+.mainHeaderMain {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    z-index: 2;
+    color: rgb(22, 22, 24);
+    background-color: white;
+    box-shadow: 1em 1em  rgb(22, 22, 24);
+    border-radius: 15rem 15rem 5em 5em;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+    min-height: fit-content;
+    width: 28rem;
+    text-align: center;
+}
+
 .displayPic {
     background-image: 
     linear-gradient(to bottom, rgba(255, 255, 255, 0.116), rgba(92, 112, 156, 0.664)),
     url('../images/cute.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 20em;
-    min-height: 20em;
+    min-width: 25rem;
+    min-height:25rem;
+
     transition: transform .2s;
     border: .5em solid rgb(22, 22, 24);
-    text-align: center;
+    
     vertical-align: bottom;
     border-radius: 50%;
+    
+}
+@media ( max-width : 600px ) {
+    .mainHeaderMain{
+        width: 50vw;
+        padding: 1rem;
+    }
+    .displayPic {
+        min-width: 45vw;
+        min-height: 45vw;
+
+    }
     
 }
 .displayPic:hover {
@@ -101,6 +123,7 @@ Link {
     color: rgb(22, 22, 24);
     box-shadow: 3em 3em  rgb(22, 22, 24);
     z-index: 2;
+    overflow-x: hidden;
 }
 .skillBox {
     display: flex;
@@ -109,12 +132,17 @@ Link {
     padding: 1em 0em 1em 0em;
     
 }
-@media (max-width: 80rem) {
+@media (max-width: 600px) {
     .skillBox {
         flex-direction: column;
     }
     body {
         font-size: 80%;
+    }
+    .contentBlockHome {
+        margin: 0.5;
+        padding: 0.5;
+        box-shadow: 1em 1em  rgb(22, 22, 24);
     }
 }
 .skillName {

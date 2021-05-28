@@ -60,9 +60,9 @@ function HomePage () {
     window.scrollTo(0, 0)
   }, [])
   return (
-    <div className='mainBody'>
+    <div className='HmainBody'>
 
-      <div className='mainHeader'>
+      <div className='mainHeaderMain'>
         <div className='displayPic' />
         <h1>Thomas Doyle</h1>
         <hr className='hrTitle' />
