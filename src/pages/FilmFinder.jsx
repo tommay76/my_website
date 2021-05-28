@@ -1,5 +1,4 @@
 import { React, useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 // images
 import homepage from '../images/projects/filmFinderPage/homepage.png'
 import moviepage from '../images/projects/filmFinderPage/moviepage.png'

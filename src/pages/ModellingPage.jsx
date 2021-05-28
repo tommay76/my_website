@@ -1,5 +1,4 @@
 import { React, useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 // images
 import render from '../images/projects/variousModelling/render 8.jpeg'
 import bedroom from '../images/projects/variousModelling/bedroom.png'

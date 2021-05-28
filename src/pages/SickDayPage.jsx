@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+
 // images
 import pics from '../images/projects/sickDay/pics.jpg'
 import bloodflow from '../images/projects/sickDay/bloodflow.gif'

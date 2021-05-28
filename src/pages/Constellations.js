@@ -2,7 +2,6 @@ import { useEffect, React } from 'react'
 import 'react-multi-carousel/lib/styles.css'
 import comeFlyWithMe from '../images/projects/comeflywithme.png'
 import '../css/ProjectPage.css'
-import { Link } from 'react-router-dom'
 
 import ProjectButton from '../components/ProjectButton'
 // Images

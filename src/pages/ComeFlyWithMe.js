@@ -1,7 +1,6 @@
 import { useEffect, useState, React } from 'react'
 import 'react-multi-carousel/lib/styles.css'
 import '../css/ProjectPage.css'
-import { Link } from 'react-router-dom'
 
 import landcolor from '../images/projects/comeflywithme/landcolor.png'
 import morecode from '../images/projects/comeflywithme/morecode.png'
