@@ -71,9 +71,6 @@ function FilmFinder () {
             Due to plaigirism rules, I cannot show the code publicly, but send
             me a message, and I'll be happy to chat about it.
           </p>
-          <Link to='/dashboard'>
-            <button>Back to home page</button>
-          </Link>
         </div>
         <div className='contentBlock'>
           <h3>Library</h3>

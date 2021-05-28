@@ -63,9 +63,6 @@ function Constellations () {
           be found here. The graphic was built using Processing, a graphical
           coding language built off of java.
         </p>
-        <Link to='/dashboard'>
-          <button>Back to home page</button>
-        </Link>
       </div>
       <div className='contentBlock'>
         <h3>Other Projects</h3>

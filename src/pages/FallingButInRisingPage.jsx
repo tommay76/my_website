@@ -78,8 +78,8 @@ function FallingButInRisingPage () {
           <p>
             This work was my highschool Visual Arts major work, which I made in 2016. It went on to win a V-Fest short Film Award for student animations and also featured in the Mosman art prize.
           </p>
-          <div style={{width:'100%', textAlign:'center'}}>
-            <a href='https://youtu.be/rhSSWxarnkM'> Here's the video!</a>
+          <div className='videoLinkButton'>
+            <a href='https://youtu.be/rhSSWxarnkM' style={{textDecoration: 'none', fontWeight: 'bold', color: 'white'}}> Link To Video</a>
           </div>
         </div>
         <div className='contentBlock'>

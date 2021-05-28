@@ -78,9 +78,6 @@ function ComeFlyWithMe () {
             simultaneously keeping the plane centred and having the planes and
             environment rotate and translate properly around it when it turned.
           </p>
-          <Link to='/dashboard'>
-            <button>Back to home page</button>
-          </Link>
         </div>
         <div className='contentBlock'>
           <h3>Library</h3>

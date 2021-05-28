@@ -63,9 +63,6 @@ function ModellingPage () {
           <p>
             The bedroom is built upon the ideas of the novel 1984 by George Orwell, of which you may notice a passage quoted on the wall. The prison island was actually a collaboration with another student using assets from both our individual projects.
           </p>
-          <Link to='/dashboard'>
-            <button>Back to home page</button>
-          </Link>
         </div>
         <div className='contentBlock'>
           <h3>Library</h3>

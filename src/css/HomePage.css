@@ -6,20 +6,6 @@ Link {
     cursor: pointer;
 }
 
-.HmainBody {
-    align-items: center;
-    min-height: 100em;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #b7ecff;
-    justify-content: baseline;
-    padding: 2em 0;
-    color: white;
-    z-index: 0;
-}
-
-
 .PC {
     transform: rotate(10deg);
     fill: rgb(22, 22, 24);
@@ -113,18 +99,6 @@ Link {
 }
 
 
-.contentBlockHome { 
-    margin: 2em;
-    background-color: white;
-    width: 75%;
-    padding: 2em;
-    border: .5em solid rgb(22, 22, 24);
-    border-radius: 2em;
-    color: rgb(22, 22, 24);
-    box-shadow: 3em 3em  rgb(22, 22, 24);
-    z-index: 2;
-    overflow-x: hidden;
-}
 .skillBox {
     display: flex;
     justify-content: space-between;
@@ -135,14 +109,6 @@ Link {
 @media (max-width: 600px) {
     .skillBox {
         flex-direction: column;
-    }
-    body {
-        font-size: 80%;
-    }
-    .contentBlockHome {
-        margin: 0.5;
-        padding: 0.5;
-        box-shadow: 1em 1em  rgb(22, 22, 24);
     }
 }
 .skillName {

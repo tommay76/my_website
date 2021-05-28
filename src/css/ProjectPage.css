@@ -117,14 +117,4 @@ button {
     align-items: center;
     display: flex;
 }
-.contentBlock { 
-    margin: 2em;
-    background-color: white;
-    width: 75%;
-    padding: 2em;
-    border: .5em solid rgb(22, 22, 24);
-    border-radius: 2em;
-    color: rgb(22, 22, 24);
-    box-shadow: 3em 3em  rgb(22, 22, 24);
-}
 
