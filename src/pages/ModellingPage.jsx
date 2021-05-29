@@ -7,6 +7,8 @@ import jail2 from '../images/projects/variousModelling/jail outer.png'
 
 import ImageGrid from '../components/ImageGrid'
 import Modal from '../components/Modal'
+
+import BackToTopButton from '../components/BackToTopButton'
 import ProjectButton from '../components/ProjectButton'
 // Images
 import constellations from '../images/projects/constellation.png'
@@ -82,6 +84,7 @@ function ModellingPage () {
             )}
           </div>
         </div>
+        <BackToTopButton />
       </div>
       {selectedImage && (
         <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage} />

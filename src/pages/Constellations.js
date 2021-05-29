@@ -3,6 +3,7 @@ import 'react-multi-carousel/lib/styles.css'
 import comeFlyWithMe from '../images/projects/comeflywithme.png'
 import '../css/ProjectPage.css'
 
+import BackToTopButton from '../components/BackToTopButton'
 import ProjectButton from '../components/ProjectButton'
 // Images
 import falling from '../images/falling.png'
@@ -78,6 +79,7 @@ function Constellations () {
           )}
         </div>
       </div>
+      <BackToTopButton />
     </div>
   )
 }

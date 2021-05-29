@@ -8,6 +8,7 @@ import settingspage from '../images/projects/filmFinderPage/settingspage.png'
 import lightmodehome from '../images/projects/filmFinderPage/lightmodehome.png'
 import lightmodesearch from '../images/projects/filmFinderPage/lightmodesearch.png'
 
+import BackToTopButton from '../components/BackToTopButton'
 import ProjectButton from '../components/ProjectButton'
 // Images
 import constellations from '../images/projects/constellation.png'
@@ -90,6 +91,7 @@ function FilmFinder () {
             )}
           </div>
         </div>
+        <BackToTopButton />
       </div>
       {selectedImage && (
         <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage} />

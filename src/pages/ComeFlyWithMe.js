@@ -17,6 +17,7 @@ import Room from '../images/room.png'
 import ImageGrid from '../components/ImageGrid'
 import Modal from '../components/Modal'
 
+import BackToTopButton from '../components/BackToTopButton'
 import ProjectButton from '../components/ProjectButton'
 function ComeFlyWithMe () {
   useEffect(() => {
@@ -97,6 +98,7 @@ function ComeFlyWithMe () {
             )}
           </div>
         </div>
+        <BackToTopButton />
       </div>
       {selectedImage && (
         <Modal

@@ -70,8 +70,7 @@ function HomePage () {
       </div>
       <div className='contentBlock'>
         <h3>About me:</h3>
-        <p>
-        I would like to think myself as a digital creative, whether that be coding up website designs, using 3d modelling software to create interesting characters and environments,  or 2D software such as Photoshop or Illustrator, where I can communicate visually through effective graphics and visuals.
+        <p> I would like to think myself as a digital creative, whether that be coding up website designs, using 3d modelling software to create interesting characters and environments,  or 2D software such as Photoshop or Illustrator, where I can communicate visually through effective graphics and visuals.
         </p>
         <p>
           I make a mean cocktail, I'm a horrible chess player and I'm great at shooting things online.

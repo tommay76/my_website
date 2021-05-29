@@ -17,6 +17,7 @@ import comeFlyWithMe from '../images/projects/comeflywithme.png'
 import FilmFinderImage from '../images/projects/filmfinderhome.png'
 import Room from '../images/room.png'
 
+import BackToTopButton from '../components/BackToTopButton'
 import ProjectButton from '../components/ProjectButton'
 // video
 // import VideoPlayer from 'react-video-js-player'
@@ -79,7 +80,7 @@ function FallingButInRisingPage () {
             This work was my highschool Visual Arts major work, which I made in 2016. It went on to win a V-Fest short Film Award for student animations and also featured in the Mosman art prize.
           </p>
           <div className='videoLinkButton'>
-            <a href='https://youtu.be/rhSSWxarnkM' style={{ textDecoration: 'none', fontWeight: 'bold', color: 'white'}}> Link To Video</a>
+            <a href='https://youtu.be/rhSSWxarnkM' style={{ textDecoration: 'none', fontWeight: 'bold', color: 'white' }}> Link To Video</a>
           </div>
         </div>
         <div className='contentBlock'>
@@ -101,6 +102,7 @@ function FallingButInRisingPage () {
             )}
           </div>
         </div>
+        <BackToTopButton />
       </div>
       {selectedImage && (
         <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage} />

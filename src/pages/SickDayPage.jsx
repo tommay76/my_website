@@ -14,6 +14,8 @@ import porple from '../images/projects/sickDay/porple.gif'
 
 import ImageGrid from '../components/ImageGrid'
 import Modal from '../components/Modal'
+
+import BackToTopButton from '../components/BackToTopButton'
 import ProjectButton from '../components/ProjectButton'
 // Images
 import constellations from '../images/projects/constellation.png'
@@ -74,7 +76,7 @@ function SickDayPage () {
             Part of a 4 person group project, I made the models for bacteria and blood cells and rendered them for a short film.
           </p>
           <div className='videoLinkButton'>
-            <a href='https://youtu.be/rB7gYFPUro8' style={{ textDecoration: 'none', fontWeight: 'bold', color: 'white'}}> Link To Video</a>
+            <a href='https://youtu.be/rB7gYFPUro8' style={{ textDecoration: 'none', fontWeight: 'bold', color: 'white' }}> Link To Video</a>
           </div>
         </div>
         <div className='contentBlock'>
@@ -96,6 +98,7 @@ function SickDayPage () {
             )}
           </div>
         </div>
+        <BackToTopButton />
       </div>
       {selectedImage && (
         <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage} />
