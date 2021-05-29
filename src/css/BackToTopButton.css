@@ -1,0 +1,18 @@
+.backToTopButton {
+  width:1.5rem;
+  height: 1.5rem;
+  padding: 1rem;
+  margin: 2rem 0 1rem 0;
+  background-color: white;
+  color: rgb(22, 22, 24);
+  border: .5em solid rgb(22, 22, 24);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .backToTopButton {
+    margin: 1rem 0 0 0 
+  }
+}

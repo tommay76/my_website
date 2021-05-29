@@ -5,6 +5,7 @@ import '../css/HomePage.css'
 // import TextField from '@material-ui/core/TextField'
 
 import ProjectButton from '../components/ProjectButton'
+import BackToTopButton from '../components/BackToTopButton'
 // Images
 import constellations from '../images/projects/constellation.png'
 import falling from '../images/falling.png'
@@ -61,7 +62,6 @@ function HomePage () {
   }, [])
   return (
     <div className='mainBody'>
-
       <div className='mainHeaderMain'>
         <div className='displayPic' />
         <h1>Thomas Doyle</h1>
@@ -258,6 +258,7 @@ function HomePage () {
           )}
         </div>
       </div>
+      <BackToTopButton />
     </div>
   )
 }

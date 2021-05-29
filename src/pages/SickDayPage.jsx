@@ -74,7 +74,7 @@ function SickDayPage () {
             Part of a 4 person group project, I made the models for bacteria and blood cells and rendered them for a short film.
           </p>
           <div className='videoLinkButton'>
-            <a href='https://youtu.be/rB7gYFPUro8' style={{textDecoration: 'none', fontWeight: 'bold', color: 'white'}}> Link To Video</a>
+            <a href='https://youtu.be/rB7gYFPUro8' style={{ textDecoration: 'none', fontWeight: 'bold', color: 'white'}}> Link To Video</a>
           </div>
         </div>
         <div className='contentBlock'>
