@@ -10,15 +10,8 @@ import sc6 from '../images/projects/fallingbutinrising/sc6.png'
 import sc7 from '../images/projects/fallingbutinrising/sc7.png'
 import sc8 from '../images/projects/fallingbutinrising/sc8.png'
 
-import constellations from '../images/projects/constellation.png'
-import sickday from '../images/sickday.png'
-import comeFlyWithMe from '../images/projects/comeflywithme.png'
-// import shallR from '../images/shallR.png'
-import FilmFinderImage from '../images/projects/filmfinderhome.png'
-import Room from '../images/room.png'
-
 import BackToTopButton from '../components/BackToTopButton'
-import ProjectButton from '../components/ProjectButton'
+import ProjectsBlock from '../components/ProjectsBlock'
 // video
 // import VideoPlayer from 'react-video-js-player'
 
@@ -26,33 +19,6 @@ import ImageGrid from '../components/ImageGrid'
 import Modal from '../components/Modal'
 
 function FallingButInRisingPage () {
-  const projects = [
-    {
-      title: 'Film Finder',
-      image: FilmFinderImage,
-      link: '/filmFinder'
-    },
-    {
-      title: 'Some 3D modelling',
-      image: Room,
-      link: '/modelling'
-    },
-    {
-      title: 'Sick Day',
-      image: sickday,
-      link: '/sickDay'
-    },
-    {
-      title: 'Constellations',
-      image: constellations,
-      link: '/constellations'
-    },
-    {
-      title: 'Come Fly With Me',
-      image: comeFlyWithMe,
-      link: '/comeFlyWithMe'
-    }
-  ]
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -87,21 +53,7 @@ function FallingButInRisingPage () {
           <h3>Library</h3>
           <ImageGrid setSelectedImage={setSelectedImage} images={images} />
         </div>
-        <div className='contentBlock'>
-          <h3>Other Projects</h3>
-          <div className='projectsBlock'>
-            {projects.length !== 0 && (
-              projects.map((project) => (
-                <ProjectButton
-                  title={project.title}
-                  link={project.link}
-                  image={project.image}
-                  key={project.title + 'button'}
-                />
-              ))
-            )}
-          </div>
-        </div>
+        <ProjectsBlock currentProject='Falling but in Rising' />
         <BackToTopButton />
       </div>
       {selectedImage && (

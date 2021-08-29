@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Route,
   Switch
-
 } from 'react-router-dom'
 import './css/App.css'
 import HomePage from './pages/HomePage'
