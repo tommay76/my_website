@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.071938f7.chunk.css",
+    "main.js": "/static/js/main.5194f8ce.chunk.js",
+    "main.js.map": "/static/js/main.5194f8ce.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4a27cb41.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4a27cb41.js.map",
+    "static/css/2.acc986e7.chunk.css": "/static/css/2.acc986e7.chunk.css",
+    "static/js/2.24d88358.chunk.js": "/static/js/2.24d88358.chunk.js",
+    "static/js/2.24d88358.chunk.js.map": "/static/js/2.24d88358.chunk.js.map",
+    "static/js/3.c3f1b4d9.chunk.js": "/static/js/3.c3f1b4d9.chunk.js",
+    "static/js/3.c3f1b4d9.chunk.js.map": "/static/js/3.c3f1b4d9.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.acc986e7.chunk.css.map": "/static/css/2.acc986e7.chunk.css.map",
+    "static/css/main.071938f7.chunk.css.map": "/static/css/main.071938f7.chunk.css.map",
+    "static/js/2.24d88358.chunk.js.LICENSE.txt": "/static/js/2.24d88358.chunk.js.LICENSE.txt",
+    "static/media/ProjectPage.css": "/static/media/constellation.0132af41.png",
+    "static/media/HomePage.css": "/static/media/cute.7968a62b.jpg",
+    "static/media/filmfinderhome.a5abac41.png": "/static/media/filmfinderhome.a5abac41.png",
+    "static/media/styles.css": "/static/media/revicons.e8746a62.woff",
+    "static/media/shallR.f577323c.png": "/static/media/shallR.f577323c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4a27cb41.js",
+    "static/css/2.acc986e7.chunk.css",
+    "static/js/2.24d88358.chunk.js",
+    "static/css/main.071938f7.chunk.css",
+    "static/js/main.5194f8ce.chunk.js"
+  ]
+}
