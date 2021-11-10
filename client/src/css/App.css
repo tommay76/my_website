@@ -23,6 +23,7 @@
 body {
   max-width: 100%;
   overflow-x: hidden;
+  background-color: #168ab2;
 }
 
 .mainBody {
@@ -31,7 +32,6 @@ body {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #168ab2;
   justify-content: baseline;
   padding: 2em 0;
   color: white;

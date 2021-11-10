@@ -1,6 +1,7 @@
 import React from 'react'
 // import '../css/ResumeButton.css'
 import axios from 'axios'
+import  FileDownload  from 'js-file-download'
 
 function ResumeButton () {
   
@@ -25,13 +26,33 @@ function ResumeButton () {
         console.log(error);
       });
   };
+  const downloadHandler = async () => {
+    axios(`/resume`, {
+      method: "GET",
+      responseType: "blob"
+      //Force to receive data in a Blob Format
+    })
+      .then(response => {
+        //Create a Blob from the PDF Stream
+        const file = new Blob([response.data], {
+          type: "application/pdf"
+        });
+        FileDownload(file, "ThomasDoyleResume.pdf");
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  };
   return (
     <div className='ResumeButton'>
       
       <h2>My Resume</h2>
 
-      <button onClick={viewHandler} className='ResumeButtonButton' style={{ color: 'black' }}>
+      <button onClick={viewHandler} className='ResumeViewButton' style={{ color: 'black' }}>
         <h2> Click Here </h2>
+      </button>
+      <button onClick={downloadHandler} className='ResumeDownloadButton' style={{ color: 'black' }}>
+        <h2> Download </h2>
       </button>
     </div>
   )

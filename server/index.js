@@ -12,6 +12,7 @@ app.get('/resume', (req,res) => {
   filename = encodeURIComponent(filename);
   res.setHeader('Content-disposition', 'inline; filename="' + filename + '"');
   res.setHeader('Content-type', 'application/pdf');
+  res.setHeader('myAss', 'eddible');
   stream.pipe(res);
   console.log("Resume fetched from API")
 });
