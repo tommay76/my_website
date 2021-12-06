@@ -4,7 +4,7 @@ import '../css/ContactPage.css'
 // import Button from '@material-ui/core/Button'
 // import TextField from '@material-ui/core/TextField'
 import { AiFillLinkedin, AiOutlineMail } from 'react-icons/ai'
-import { FaAdobe } from 'react-icons/fa'
+import { SiAdobe } from 'react-icons/si'
 
 function ContactPage () {
   useEffect(() => {
@@ -27,7 +27,7 @@ function ContactPage () {
           </a>
         </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <FaAdobe size={50} style={{ paddingRight: '1em' }} />
+          <SiAdobe size={35} style={{ paddingRight: '1.5em',paddingLeft: '.4em' }} />
           <a href='https://tomdoyle.myportfolio.com/'>
             {' '}
             Another website of mine{' '}
