@@ -144,7 +144,7 @@ function HomePage () {
           <div className='skillName'>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               <h4> JavaScript: </h4>
-              <h4>60%</h4>
+              <h4>80%</h4>
             </div>
           </div>
           <div className='skillGraphic'>
@@ -154,11 +154,11 @@ function HomePage () {
             The newest addition to my language arsenal, JavaScript is the
             current language I’m actively learning as part of my web-dev
             education, albeit in a self-learned sense rather than formally.
-            Whilst I have experience using frameworks and libraries such as
-            React, Express, Node.js and Mongo.db to create well functioning
-            websites, I would say it’s my weakest language as I have little
-            experience with the vanilla language. That being said, who uses
-            vanilla JavaScript these days.{' '}
+            I have experience using frameworks and libraries such as
+            React, Express, and Mongo.db to create well functioning
+            websites. I am currently learning how to impliment TypeScript 
+            into my projects, which has been a godsend. Type restricted JS 
+            is the piece I didn't know I was missing.{' '}
           </p>
         </div>
         <div className='skillBox'>
