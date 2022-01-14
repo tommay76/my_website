@@ -7,7 +7,7 @@ import '../css/HomePage.css'
 // Components
 import BackToTopButton from '../components/BackToTopButton'
 import ProjectsBlock from '../components/ProjectsBlock'
-import ResumeButton from '../components/ResumeButton'
+
 
 
 import Accordion from '@material-ui/core/Accordion'
@@ -30,7 +30,6 @@ function HomePage () {
         <h1>Thomas Doyle</h1>
         <hr className='hrTitle' />
         <h3>Designer | Developer</h3>
-        <ResumeButton/>
       </div>
       <div className='contentBlock'>
         <h3>About me:</h3>

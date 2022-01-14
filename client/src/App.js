@@ -2,7 +2,7 @@ import React from 'react'
 import {
   BrowserRouter as Router,
   Route,
-  Switch
+  Routes
 } from 'react-router-dom'
 import './css/App.css'
 import HomePage from './pages/HomePage'
@@ -22,19 +22,19 @@ function App () {
     <Router>
       <div>
         <AppBar />
-        <Switch>
-          <Route path='/dashboard' exact component={HomePage} />
-          <Route path='/comeFlyWithMe' exact component={ComeFlyWithMe} />
-          <Route path='/constellations' exact component={Constellations} />
-          <Route path='/contact' exact component={ContactPage} />
-          <Route path='/fallingButInRising' exact component={FallingButInRisingPage} />
-          <Route path='/filmFinder' exact component={FilmFinder} />
-          <Route path='/modelling' exact component={ModellingPage} />
-          <Route path='/nameadder' exact component={NameAdder} />
-          <Route path='/sickDay' exact component={SickDayPage} />
-          <Route path='/' exact component={HomePage} />
-          <Route component={NotFound} />
-        </Switch>
+        <Routes>
+          <Route path='/dashboard' exact element={<HomePage/>} />
+          <Route path='/comeFlyWithMe' exact element={<ComeFlyWithMe/>} />
+          <Route path='/constellations' exact element={<Constellations/>} />
+          <Route path='/contact' exact element={<ContactPage/>} />
+          <Route path='/fallingButInRising' exact element={<FallingButInRisingPage/>} />
+          <Route path='/filmFinder' exact element={<FilmFinder/>} />
+          <Route path='/modelling' exact element={<ModellingPage/>} />
+          <Route path='/nameadder' exact element={<NameAdder/>} />
+          <Route path='/sickDay' exact element={<SickDayPage/>} />
+          <Route path='/' exact element={<HomePage/>} />
+          <Route element={<NotFound/>} />
+        </Routes>
       </div>
     </Router>
   )

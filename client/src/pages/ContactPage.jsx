@@ -6,6 +6,8 @@ import '../css/ContactPage.css'
 import { AiFillLinkedin, AiOutlineMail } from 'react-icons/ai'
 import { SiAdobe } from 'react-icons/si'
 
+import ResumeButton from '../components/ResumeButton'
+
 function ContactPage () {
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -34,6 +36,7 @@ function ContactPage () {
           </a>
           <p>(Using Adobe Portfolio)</p>
         </div>
+        <ResumeButton/>
       </div>
     </div>
   )
