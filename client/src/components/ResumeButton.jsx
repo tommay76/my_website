@@ -15,7 +15,7 @@ const APITester = async () => {
 }
 
   const viewHandler = async () => {
-    axios(`/api/resume`, {
+    axios(`/.netlify/functions/GetResume`, {
       method: "GET",
       responseType: "blob"
       //Force to receive data in a Blob Format
@@ -36,7 +36,7 @@ const APITester = async () => {
       });
   };
   const downloadHandler = async () => {
-    axios(`/api/resume`, {
+    axios(`/.netlify/functions/GetResume`, {
       method: "GET",
       responseType: "blob"
       //Force to receive data in a Blob Format
