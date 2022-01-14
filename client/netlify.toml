@@ -1,10 +1,11 @@
 [build]
-    functions="functions"
-
+command="npm run build"
+functions="functions"
+publish="build"
 [[redirects]]
-    to="/.netlify/functions/api:splat"
-    from="/*"
-    status=200 
+to="/.netlify/functions/GetResume"
+from="/api/resume"
+status=200 
     
 
     

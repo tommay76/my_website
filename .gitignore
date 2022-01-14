@@ -1,8 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-client/node_modules
-server/node_modules
+client/node_modules/
+server/node_modules/
 /.pnp
 .pnp.js
 
@@ -10,7 +10,7 @@ server/node_modules
 /coverage
 
 # production
-client/build
+client/build/
 
 # misc
 .DS_Store
@@ -21,20 +21,4 @@ client/build
 
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
-client/build/asset-manifest.json
-client/build/index.html
-client/build/static/css/2.acc986e7.chunk.css
-client/build/static/css/2.acc986e7.chunk.css.map
-client/build/static/css/main.071938f7.chunk.css
-client/build/static/css/main.071938f7.chunk.css.map
-client/build/static/js/2.24d88358.chunk.js
-client/build/static/js/2.24d88358.chunk.js.LICENSE.txt
-client/build/static/js/2.24d88358.chunk.js.map
-client/build/static/js/3.c3f1b4d9.chunk.js
-client/build/static/js/3.c3f1b4d9.chunk.js.map
-client/build/static/js/main.5194f8ce.chunk.js
-client/build/static/js/main.5194f8ce.chunk.js.map
-client/build/static/js/runtime-main.4a27cb41.js
-client/build/static/js/runtime-main.4a27cb41.js.map
-client/build/static/media/shallR.f577323c.png
+yarn-error.log*debug.log
