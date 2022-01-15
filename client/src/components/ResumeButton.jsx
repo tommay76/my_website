@@ -4,18 +4,8 @@ import axios from 'axios'
 import  FileDownload  from 'js-file-download'
 
 function ResumeButton () {
-  
-const APITester = async () => {
-  axios.get('api/testHTML').then((res) => {
-    console.log(res)
-  })
-  .catch((err) => {
-    console.log("error: Not got", err)
-  })
-}
-
   const viewHandler = async () => {
-    axios(`/.netlify/functions/GetResume`, {
+    axios(`/api/resume`, {
       method: "GET",
       responseType: "blob"
       //Force to receive data in a Blob Format
@@ -36,7 +26,7 @@ const APITester = async () => {
       });
   };
   const downloadHandler = async () => {
-    axios(`/.netlify/functions/GetResume`, {
+    axios(`/api/resume`, {
       method: "GET",
       responseType: "blob"
       //Force to receive data in a Blob Format
@@ -63,7 +53,6 @@ const APITester = async () => {
       <button onClick={downloadHandler} className='ResumeDownloadButton' style={{ color: 'black' }}>
         <h2> Download </h2>
       </button>
-      <button onClick={APITester} className='ResumeDownloadButton' style={{ color: 'black' }}>API Test</button>
     </div>
   )
 }
