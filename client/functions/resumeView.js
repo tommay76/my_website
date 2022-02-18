@@ -3,13 +3,13 @@
 const fs = require ('fs')
 const path = require ('path')
 
-const pathToResume = path.join(__dirname,'..','functions','PDFs')
+const stringPath = './PDFs/ThomasDoyleResume.pdf'
 const filename = 'ThomasDoyleResume.pdf'
 
 exports.handler = async (event, context) => {
   try {
     var encodedFile = encodeURIComponent(filename)
-    var file = fs.readFileSync(path.join(pathToResume,filename), {encoding: 'base64'});
+    var file = fs.readFileSync(require.resolve(stringPath), {encoding: 'base64'});
     console.log("read....")
   }
   catch (e) {
