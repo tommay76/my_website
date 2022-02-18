@@ -1,9 +1,6 @@
 // Netlify Function
 // Serves a PDF File 
-require('./PDFs/ThomasDoyleResume.pdf')
 const fs = require ('fs')
-const path = require ('path')
-
 const stringPath = './PDFs/ThomasDoyleResume.pdf'
 const filename = 'ThomasDoyleResume.pdf'
 
@@ -17,7 +14,7 @@ exports.handler = async (event, context) => {
     console.log("not Rad....")
     return {
       statusCode:420,
-      body: `oh no`
+      body: `oh no ${e}`
     }
   }
   return {

@@ -14,7 +14,7 @@ exports.handler = async (event, context) => {
     console.log("not Rad....")
     return {
       statusCode:420,
-      body: `oh no`
+      body: `oh no ${e}`
     }
   }
   return {
