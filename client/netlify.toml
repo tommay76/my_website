@@ -1,5 +1,5 @@
 [functions]
-included_files = ["functions/PDFS/ThomasDoyleResume.pdf"]
+included_files = ["./PDFS/ThomasDoyleResume.pdf","/functions/PDFS/ThomasDoyleResume.pdf"]
 [build]
 command="npm run build"
 functions="functions"
@@ -8,6 +8,4 @@ publish="build"
 from="/api/*"
 to="/.netlify/functions/:splat"
 
-    
-
-    
+  

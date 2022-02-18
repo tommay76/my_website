@@ -1,6 +1,5 @@
 // Netlify Function
 // Serves a PDF File 
-require("./PDFs/ThomasDoyleResume.pdf")
 const fs = require ('fs')
 const stringPath = './PDFs/ThomasDoyleResume.pdf'
 const filename = 'ThomasDoyleResume.pdf'
