@@ -3,9 +3,8 @@ command="npm run build"
 functions="functions"
 publish="build"
 [[redirects]]
-to="/.netlify/functions/GetResume"
-from="/api/resume"
-status=200 
+from="/api/*"
+to="/.netlify/functions/:splat"
     
 
     
