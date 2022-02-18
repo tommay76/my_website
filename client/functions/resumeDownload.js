@@ -1,15 +1,14 @@
 // Netlify Function
 // Serves a PDF File 
-import "./PDFs/ThomasDoyleResume.pdf"
-import { readFileSync } from 'fs'
-
+require("./PDFs/ThomasDoyleResume.pdf")
+const fs = require ('fs')
 const stringPath = './PDFs/ThomasDoyleResume.pdf'
 const filename = 'ThomasDoyleResume.pdf'
 
-export async function handler(event, context) {
+exports.handler = async (event, context) => {
   try {
     var encodedFile = encodeURIComponent(filename)
-    var file = readFileSync(require.resolve(stringPath), {encoding: 'base64'});
+    var file = fs.readFileSync(require.resolve(stringPath), {encoding: 'base64'});
     console.log("read....")
   }
   catch (e) {
