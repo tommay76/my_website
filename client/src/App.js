@@ -33,7 +33,7 @@ function App () {
           <Route path='/nameadder' exact element={<NameAdder/>} />
           <Route path='/sickDay' exact element={<SickDayPage/>} />
           <Route path='/' exact element={<HomePage/>} />
-          <Route element={<NotFound/>} />
+          <Route path='/*' element={<NotFound/>} />
         </Routes>
       </div>
     </Router>

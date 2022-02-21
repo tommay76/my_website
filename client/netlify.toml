@@ -7,5 +7,8 @@ publish="build"
 [[redirects]]
 from="/api/*"
 to="/.netlify/functions/:splat"
+[[redirects]]
+from="/*"
+to="/"
 
   
