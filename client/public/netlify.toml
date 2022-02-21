@@ -1,0 +1,14 @@
+[functions]
+included_files = ["./PDFS/ThomasDoyleResume.pdf","/functions/PDFS/ThomasDoyleResume.pdf","client/functions/PDFS/ThomasDoyleResume.pdf"]
+[build]
+command="npm run build"
+functions="functions"
+publish="build"
+[[redirects]]
+from="/api/*"
+to="/.netlify/functions/:splat"
+[[redirects]]
+from="/*"
+to="/"
+
+  
