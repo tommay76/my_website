@@ -1,43 +1,8 @@
 
-*{
-    font-family: 'Courier New', Courier, monospace;
-}
 Link {
     cursor: pointer;
 }
 
-.PC {
-    transform: rotate(10deg);
-    fill: rgb(22, 22, 24);
-    stroke: none;
-    width: 20%;
-    height: 100%;
-}
-.Controller {
-    transform: rotate(-20deg);
-    fill: rgb(22, 22, 24);
-    stroke: none;
-    width: 20%;
-    height: 100%;
-}
-.Headphones {
-    transform: rotate(5deg);
-    fill: rgb(22, 22, 24);
-    stroke: none;
-    width: 20%;
-    height: 100%;
-}
-.iconsContainer {
-    display: flex;
-    justify-content: space-around;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 10em;
-    z-index: 1;
-    right: 10%;
-    height: 10vw;
-    width: 100%;
-}
 .hrTitle {
     border: 2px solid rgb(22, 22, 24);
     color: rgb(22, 22, 24);
@@ -55,9 +20,9 @@ Link {
     z-index: 2;
     color: rgb(22, 22, 24);
     background-color: white;
-    box-shadow: 1em 1em  rgb(22, 22, 24);
-    border-radius: 15rem 15rem 5em 5em;
-    font-family: 'Courier New', Courier, monospace;
+    border: .5rem solid  rgb(22, 22, 24);
+    border-radius: 3rem;
+    /* font-family: 'Courier New', Courier, monospace; */
     
     
     min-height: fit-content;
@@ -97,7 +62,69 @@ Link {
     transform: scale(1.1);
     
 }
+.home-content-block { 
+    margin: 0;
+    background-color: white;
+    /* width: 75%; */
+    padding: 2em;
+    border: .5em solid rgb(22, 22, 24);
+    border-radius: 2em;
+    color: rgb(22, 22, 24);
+    /* box-shadow: 3em 3em  rgb(22, 22, 24); */
+    z-index: 2;
+    overflow-x: hidden;
+  }
+.about-me-plus-education {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex: 1;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 4rem;
 
+}
+.about-me-plus-skills {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    flex: 1;
+    max-width: 30%;
+    min-width: 560px;
+}
+.education-plus-projects {
+    max-width: 50%;
+    min-width: 560px;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex: 1;
+}
+.about-me {
+    min-width: 560px;
+    width: 100%;
+    flex-grow: 1;
+}
+.education {
+    min-width: 560px;
+    flex-grow: 1;
+}
+
+@media (max-width: 1100px) {
+    .about-me-plus-education {
+        flex-wrap: wrap;
+    }
+    .about-me-plus-skills {
+        max-width: 80%;
+    }
+    .education-plus-projects{
+        max-width: 80%;
+    }
+}
 
 .skillBox {
     display: flex;
@@ -117,7 +144,13 @@ Link {
     
 }
 .skillGraphic {
-    
+    background: repeating-linear-gradient(
+  -45deg,
+  #ffffff,
+  #ffffff 10px,
+  #dceaf2 10px,
+  #dceaf2 20px
+);
     min-width: 80%;
     height: 3rem;
     text-align: right;
@@ -131,6 +164,7 @@ Link {
     width: 80%;
     height: 100%;
     border-radius: 0.6em 0em 0em .6em;
+    border-right: 2px dashed rgb(22, 22, 24);
 
 }
 .skillGraphicFill_Java {
@@ -138,24 +172,28 @@ Link {
     width: 80%;
     height: 100%;
     border-radius: 0.6em 0em 0em .6em;
+    border-right: 2px dashed rgb(22, 22, 24);
 }
 .skillGraphicFill_Python {
     background-color: rgb(144, 158, 238);
     width: 90%;
     height: 100%;
     border-radius: 0.6em 0em 0em .6em;
+    border-right: 2px dashed rgb(22, 22, 24);
 }
 .skillGraphicFill_C {
     background-color: rgb(255, 152, 93);
     width: 90%;
     height: 100%;
     border-radius: 0.6em 0em 0em .6em;
+    border-right: 2px dashed rgb(22, 22, 24);
 }
 .skillGraphicFill_Unix {
     background-color: lightgreen;
     width: 80%;
     height: 100%;
     border-radius: 0.6em 0em 0em .6em;
+    border-right: 2px dashed rgb(22, 22, 24);
 }
 /* Projects */
 .projectsBlock {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 import ProjectButton from '../components/ProjectButton'
 // Images
@@ -12,8 +12,12 @@ import FilmFinderImage from '../images/projects/filmfinderhome.png'
 //css
 import '../css/ProjectsBlock.css'
 
+
+
 function ProjectBlock ({ currentProject }) {
-  
+
+  const ref = useRef()
+
   const tags = [
     'All',
     '2D',
@@ -74,8 +78,8 @@ function ProjectBlock ({ currentProject }) {
   })
   const [filteredList, updateList] = useState([...projects])
   const [currentTag, updateCurrentTag] = useState('All')
-  const [dropDownVisible, setDropDownVisible] = useState(false)
-  
+  const [ isDropDownVisible, setDropDownVisible] = useState(false)
+
   const filterTags = (tag) => {
     if (tag === 'All'){
       updateList([...projects])
@@ -88,7 +92,24 @@ function ProjectBlock ({ currentProject }) {
     }
     updateCurrentTag(tag)
   }
+  
   useEffect(()=>{},[currentTag])
+
+  useEffect(() => {
+    const closeOnOutsideClick = e => {
+      if (isDropDownVisible && ref.current && !ref.current.contains(e.target)) {
+        console.log("!Ref clicked")
+        setDropDownVisible(false)
+      }
+    }
+    console.log("adding event listener")
+    document.addEventListener("click", closeOnOutsideClick);
+    return () =>{
+      document.removeEventListener("click", closeOnOutsideClick);
+    }
+  }, [isDropDownVisible])
+
+
   return (
     <div className='contentBlock' id='projects'>
       <h3>Projects:</h3>
@@ -97,8 +118,8 @@ function ProjectBlock ({ currentProject }) {
         {currentTag}  
         <i className="arrow-down"></i>
       </button>
-      { dropDownVisible === true && (
-        <div className='tag-list'>
+      { isDropDownVisible && (
+        <div className='tag-list' ref={ref} >
           <ul className='project-ul'>
             {tags.map((t) => (
               <li className='project-li' key={t} onClick={() => {filterTags(t); setDropDownVisible(prev => !prev)}} >
