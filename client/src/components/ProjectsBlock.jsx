@@ -111,7 +111,7 @@ function ProjectBlock ({ currentProject }) {
 
 
   return (
-    <div className='contentBlock' id='projects'>
+    <div className='home-content-block' id='projects'>
       <h3>Projects:</h3>
       <button className='tag-button' onClick={() => setDropDownVisible(prev => !prev)}>
         {/* onClick={setDropDownVisible(true)} */}
